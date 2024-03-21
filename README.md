@@ -1,8 +1,6 @@
 # folder_sync
-PowerShell script to replicate and sync content of a folder
-
     .SYNOPSIS
-    One way sync to exactly match content of the source folder
+    Function to sync content of a folder (one direction)
 
     .DESCRIPTION
     Very basic script leveraging System.IO .NET Class to synchronize two folders (one direction).
@@ -19,7 +17,7 @@ PowerShell script to replicate and sync content of a folder
     Describes the target folder to be replicated to
 
     .PARAMETER Logfolder
-    Describes the log folder
+    Describes the log folder path
 
     .EXAMPLE
     Sync-Folder -source "C:\test\source" -dest "C:\test\replica" -logfolder "C:\test\log"
